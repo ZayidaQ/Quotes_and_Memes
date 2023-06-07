@@ -24,3 +24,15 @@ function DisplayQuote() {
     })
 }
 
+function DisplayMeme() {
+    // Save the APL endpoint URL
+    const base_URL = "";
+
+    fetch(base_URL)
+    .then(response => response.json())
+    .then((memes) => {
+        //Write a conditional that checks API, and outputs that its busy 
+        console.log(memes.data.memes[0])
+    });
+}
+
